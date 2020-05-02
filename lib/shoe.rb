@@ -6,19 +6,15 @@ class Shoe
 
   def initialize(brand_shoe)
     @brand = brand_shoe
+    BRANDS << brand_shoe unless BRANDS.any? {|brand|brand == brand}
   end
   
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-
-def brand=(brand_shoe)
-    @brand = brand_shoe
-    BRANDS << brand_shoe
 end
 
-end
 
 
 #   brands = ["Uggs", "Rainbow"]
