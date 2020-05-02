@@ -7,6 +7,10 @@ class Shoe
   def initialize(brand)
     @brand = brand
   end
+  
+  def brand=(brand_shoe)
+    @brand=brand_shoe
+    BRANDS<< brand_shoe
 
   def cobble
     self.condition = "new"
@@ -14,8 +18,7 @@ class Shoe
   end
 end
 
-def brand=(brand_shoe)
-  @brand = 
+
 
 #   brands = ["Uggs", "Rainbow"]
 #       brands.each do |brand|
