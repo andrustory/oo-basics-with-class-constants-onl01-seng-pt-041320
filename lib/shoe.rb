@@ -4,9 +4,9 @@ class Shoe
   
   BRANDS=[]
 
-  def initialize(brand_shoe)
-    @brand = brand_shoe
-    BRANDS << brand_shoe unless BRANDS.any? {|brand|brand == brand}
+  def initialize(brand)
+    @brand = brand
+    BRANDS << brand unless BRANDS.any? {|brand|brand == brand}
   end
   
   def cobble
